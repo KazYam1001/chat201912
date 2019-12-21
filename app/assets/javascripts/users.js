@@ -32,8 +32,8 @@ $(function() {
     $(`#${userId}`).append(html);
   }
 
-  $('#user-search-field').on('keyup', function(){
-    var input = $('#user-search-field').val();    //フォームの値を取得して変数に代入する
+  $('.chat-group-form__input').on('keyup', function(){
+    var input = $('.chat-group-form__input').val();    //フォームの値を取得して変数に代入する
     $.ajax({
       type: 'GET',    //HTTPメソッド
       url: '/users',       //users_controllerの、indexアクションにリクエストの送信先を設定する
