@@ -43,7 +43,7 @@ $(function() {
     .done(function(users) {
       $("#user-search-result").remove();
       if (users.length !== 0) {
-        users.forEach(function(user) {
+        users.each(function(user) {
           addUser(user);
         });
       } else if (input.length == 0) {
