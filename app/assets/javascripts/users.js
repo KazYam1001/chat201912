@@ -41,7 +41,7 @@ $(function() {
       data: { keyword: input },   //テキストフィールドに入力された文字を設定する
     })
     .done(function(users) {
-      $("#user-search-result").empty();
+      $("#user-search-result").remove();
       if (users.length !== 0) {
         users.forEach(function(user) {
           addUser(user);
