@@ -36,7 +36,7 @@ $(function() {
     var input = $('.chat-group-form__input').val();    //フォームの値を取得して変数に代入する
     $.ajax({
       type: 'GET',    //HTTPメソッド
-      url: '/users',       //users_controllerの、indexアクションにリクエストの送信先を設定する
+      url: 'users',       //users_controllerの、indexアクションにリクエストの送信先を設定する
       dataType: 'json',
       data: { keyword: input },   //テキストフィールドに入力された文字を設定する
     })
