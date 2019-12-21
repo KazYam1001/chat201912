@@ -29,7 +29,7 @@ $(function() {
 
   function addMember(userId) {
     let html = `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
-    $(`#${userId}`).append(html);
+    $(`${userId}`).append(html);
   }
 
   $('.chat-group-form__input').on('keyup', function(){
