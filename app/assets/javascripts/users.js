@@ -18,7 +18,7 @@ $(function() {
     $("#user-search-result").append(html);
   }
 
-  function addDeleteUser(name, id) {
+  function addDeleteUser(neme, id) {
     let html = `
     <div class="chat-group-user clearfix" id="${id}">
       <p class="chat-group-user__name">${name}</p>
