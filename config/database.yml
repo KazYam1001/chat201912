@@ -8,15 +8,4 @@ default: &default
 
 development:
   <<: *default
-  database: chat-space_development
-
-test:
-  <<: *default
-  database: chat-space_test
-
-production:
-  <<: *default
-  database: chat-space_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  database: chat_rp_development
